@@ -13,7 +13,7 @@ pipeline {
             steps{
                 script{
                    withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-                   sh 'docker login -u javatechie -p ${dockerhubpwd}'
+                   sh 'docker login -u alphax123 -p ${dockerhubpwd}'
 
 }
                    sh 'docker push alphax123/docker-image-autobuild:jenkins-pipeline'
